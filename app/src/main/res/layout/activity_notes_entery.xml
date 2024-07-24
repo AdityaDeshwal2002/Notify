@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotesEntery">
+    <TextView
+        android:id="@+id/headline_NE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notify"
+        android:layout_margin="10dp"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/black">
+    </TextView>
+    <EditText
+        android:id="@+id/heading_NE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:layout_below="@id/headline_NE"
+        android:layout_margin="10dp"
+        android:textSize="25dp"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:padding="10dp"
+        android:hint="Title"
+        android:textStyle="bold"
+        android:background="@drawable/rectangle">
+    </EditText>
+
+    <EditText
+        android:id="@+id/text_ish_NE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading_NE"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rectangle"
+        android:hint="Note"
+        android:padding="10dp"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:textSize="20dp">
+
+    </EditText>
+
+</RelativeLayout>
